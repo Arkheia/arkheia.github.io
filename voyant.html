@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Voyant Tools- Humanus Arkheia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Set the height of the iframe to match the viewport */
+			iframe {
+			  height: 100vh;
+			  width: 80%;
+			  border: none;
+			}
+		  </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="./index.html">
+							<div class="logo">
+								<span class="icon fa-gem"></span>
+							</div>
+						</a>
+						<div class="content">
+							<div class="inner">
+								<h1>Voyant Tools</h1>
+							</div>
+						</div>
+					</header>
+					
+					
+					<p><br>
+						<a href="https://voyant-tools.org/" target="_blank">Voyant Tools </a> is an online application used for text analysis. Created with the digital humanities in mind, it is intended to facilitate reading and interpretive practices for its users. Voyant can generate word clouds from given documents, show word frequency or collocation, and perform other text mining functions with plain text, HTML, XML, PDF, RTF, and MS Word files. Researchers have used Voyant Tools to analyze texts in a wide range of contexts including literature, language teaching, healthcare, and system architecture.
+						<br><br>
+						
+						We pick three books to understand their corpus through Voyant tools. They are:
+						<ol>
+							<li> <b><a href="#engels">The Origin of the Family, Private Property and the State</a></b> by Fredrich Engels</li>
+							<li> <b><a href="#kafka">Metamorphosis</a></b> by Franz Kafka</li>
+							<li> <b><a href="#carroll">Alice’s Adventures in Wonderland</a></b> by Lewis Carroll</li>
+						</ol>
+
+						Want to analyze your favorite book? Try here!
+						<a href="#voyant">
+							<button style="display: block; margin: 0 auto;">Analyze My Corpus</button>
+						</a>
+					</p>
+
+					<p id="engels"><br><br>
+						<h3>
+							<a href="https://www.gutenberg.org/cache/epub/33111/pg33111-images.html" target="_blank"> The Origin of the Family, Private Property and the State</a>
+						</h3>
+						<br>
+						<h4>Book Preview</h4>
+						<iframe style='width: 80%px; height: 315px;' src='https://voyant-tools.org/tool/Reader/?corpus=43b0dfae39e0cb29af40aa34b234b9d4'></iframe>
+
+						<h4><br>Trends in the book</h4>
+						<iframe style='width: 80%; height: 315px;' src='https://voyant-tools.org/tool/Trends/?query=gens&query=family&query=time&query=marriage&query=women&mode=document&corpus=43b0dfae39e0cb29af40aa34b234b9d4'></iframe>
+
+						<h4><br>Word Cloud</h4>
+						<iframe style='width: 80%; height: 315px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=43b0dfae39e0cb29af40aa34b234b9d4'></iframe>
+					</p>
+					
+					<hr width="100%" color="#000000" align="center">
+					<p id="kafka">
+						<h3>
+							<a href="https://www.gutenberg.org/cache/epub/5200/pg5200-images.html" target="_blank">Metamorphosis</a>
+						</h3>
+						
+						<h4>Book Preview</h4>
+						<iframe style='width: 80%; height: 316px;' src='https://voyant-tools.org/tool/Reader/?corpus=7bd96407b7ff9257ff4f8058934b3233'></iframe>
+
+						<h4><br>Trends in the book</h4>
+						<iframe style='width: 80%; height: 316px;' src='https://voyant-tools.org/tool/Trends/?query=gregor&query=room&query=gregor%E2%80%99s&query=sister&query=father&mode=document&corpus=7bd96407b7ff9257ff4f8058934b3233'></iframe>
+						
+						<h4><br>Word Cloud</h4>
+						<iframe style='width: 80%; height: 316px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=7bd96407b7ff9257ff4f8058934b3233'></iframe>
+						
+
+					</p>
+
+					<hr width="100%" color="#000000" align="center">
+					<p id="carroll">
+						<h3>
+							<a href="https://www.gutenberg.org/cache/epub/11/pg11-images.html" target="_blank">Alice’s Adventures in Wonderland</a>
+						</h3>
+
+						<h4>Book Preview</h4>
+						<iframe style='width: 80%; height: 314px;' src='https://voyant-tools.org/tool/Reader/?corpus=ce029ec2a71bca13c0d8ef44710c19b1'></iframe>
+
+						<h4><br>Trends in the book</h4>
+						<iframe style='width: 80%; height: 314px;' src='https://voyant-tools.org/tool/Trends/?query=said&query=alice&query=little&query=project&query=know&mode=document&corpus=ce029ec2a71bca13c0d8ef44710c19b1'></iframe>
+						
+						<h4><br>Word Cloud</h4>
+						<iframe style='width: 80%; height: 314px;' src='https://voyant-tools.org/tool/Cirrus/?corpus=ce029ec2a71bca13c0d8ef44710c19b1'></iframe>
+
+					</p>
+
+
+
+					<hr width="100%" color="#000000" align="center">				
+					<p 
+					id="voyant" >
+						<h2>Analyze your corpus</h2>
+						<p>
+							Want to analyze your favorite books? Simply grab the URL of your book (preferably HTML) from a public-site like <a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a> and paste in the box below.
+							<br> Alternatively, you can also type or copy-paste the corpus text in the box below to see how Voyant tools work.
+						</p>
+					</p>
+					<iframe src="https://voyant-tools.org/" frameborder="0"></iframe>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy;Design: <a href="./index.html">Arkheia</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

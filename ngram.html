@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Google n-Gram- Humanus Arkheia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="./index.html">
+							<div class="logo">
+								<span class="icon fa-gem"></span>
+							</div>
+						</a>
+						<div class="content">
+							<div class="inner">
+								<h1>Google n-Gram</h1>
+							</div>
+						</div>
+					</header>
+					<blockquote>
+					<p><br>
+						The Google Ngram Viewer or Google Books Ngram Viewer is an online search engine that charts the frequencies of any set of search strings using a yearly count of n-grams found in printed sources published between 1500 and 2019 in Google's text corpora in English, Chinese (simplified), French, German, Hebrew, Italian, Russian, or Spanish.
+
+						The program can search for a word or a phrase, including misspellings or gibberish. The n-grams are matched with the text within the selected corpus, optionally using case-sensitive spelling (which compares the exact use of uppercase letters), and, if found in 40 or more books, are then displayed as a graph. The Google Ngram Viewer supports searches for parts of speech and wildcards. It is routinely used in research.
+						
+						<sup><a href="https://en.wikipedia.org/wiki/Google_Ngram_Viewer"  target="_blank">wiki</a></sup>
+					</p>
+					</blockquote>
+					
+					<p>
+						<a href="https://books.google.com/ngrams/" target="_blank">Google Ngram Viewer</a> is a tool that allows researchers to analyze the frequency of word usage in a massive corpus of books that have been digitized by Google. It's a web application that lets users search and graph the frequency of any word or phrase appearing in books that have been scanned by Google. The data comes from Google Books, which has digitized millions of books from many different languages.
+						The Ngram Viewer is useful for researchers in many ways. For example, researchers can use it to study changes in language over time or to examine the popularity of different words or phrases. <br><br>
+						n-Grams are great help in assessing the relative weight of keywords in terms of their usage during a given time period.Check out the n-Grams below to compare keywords based on (1) <a href="#dream">Dream</a> (2) <a href="#politics">Politics</a> <br>
+						<br> Have other keywords in mind? Try N-Gram for yourself.
+						<a href="#ngram">
+							<button style="display: block; margin: 0 auto;">Create my n-gram</button>
+						</a>
+						
+					</p>
+				
+<!-- Dream, Subconscious, Psychology-->
+					<p id="dream"><br> <b>Dream, Subconscious, Psychology</b> during 1800-2019 for <b>En</b> corpus</p>
+					<iframe name="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?content=dream,subconscious,psychology&year_start=1800&year_end=2019&corpus=en-2019&smoothing=3" width=900 height=350 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+
+<!-- Capitalism, Communism, Fascism, Nationalism-->
+					<p id="politics"><br> <br><b>Capitalism, Communism, Fascism, Nationalism</b> during 1900-2019 for <b>En</b> corpus</p>
+					<iframe name="ngram_chart" src="https://books.google.com/ngrams/interactive_chart?content=capitalism,communism,fascism,nationalism&year_start=1900&year_end=2019&corpus=en-2019&smoothing=3" width=900 height=350 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+
+					<hr width="100%" color="#000000" align="center">
+<!-- Your N-Gram Opportunity-->
+					<p id="ngram" ><b>Create your n-Gram </b></p>
+					<iframe id="ngram_iframe" src="https://books.google.com/ngrams" width="900" height="600px"></iframe>
+					<script>
+						function searchNgram() {
+							var keywords = document.getElementById('keywords').value;
+							var ngramUrl = 'https://books.google.com/ngrams/graph?content=' + keywords + '&year_start=1800&year_end=2008&corpus=15&smoothing=3&share=&direct_url=t1%3B%2C' + keywords + '%3B%2Cc0';
+
+							document.getElementById('ngram_iframe').src = 'https://books.google.com/ngrams/graph?content=' + keywords;
+						}
+					</script>
+
+					<iframe name="ngram_chart" src="" width=900 height=500 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe>
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy;Design: <a href="./index.html">Arkheia</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
